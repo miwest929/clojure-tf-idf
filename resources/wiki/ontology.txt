@@ -1,0 +1,5 @@
+In computer science and information science, an ontology is a formal framework for representing knowledge. This framework names and defines the types, properties, and interrelationships of the entities in a domain of discourse. The entities are conceptualizations (limited abstractions) of phenomena.
+
+An ontology compartmentalizes the variables needed for some set of computations, and establishes the relationships between them.[1][2]
+
+The fields of artificial intelligence, the Semantic Web, systems engineering, software engineering, biomedical informatics, library science, enterprise bookmarking, and information architecture all create ontologies to limit complexity and to organize information. The ontology can then be applied to problem solving.
