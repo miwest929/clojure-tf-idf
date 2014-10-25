@@ -10,6 +10,7 @@
 
 (defn extract-important-words [top-n]
    (let [docs (compute-frequencies (extract-articles (get-files local-wiki-path)))]
+     (doseq [d docs] (store-article (d "file")))
      (println (map #(identity {:article (% "file") :terms (map :term (take top-n (tf-idf docs %)))}) docs))
 ))
 

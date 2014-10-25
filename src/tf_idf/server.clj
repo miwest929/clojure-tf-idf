@@ -1,10 +1,16 @@
 (ns tf-idf.server
-  (:use ring.adapter.jetty))
+  (:use ring.adapter.jetty)
+  (:use compojure.core)
+  (:use tf-idf.api)
+  (:require [compojure.handler :as handler]
+            [compojure.core :as cc]
+            [compojure.route :as route]))
 
-(defn handler [request]
-  {:status 200
-   :headers {"Content-Type" "text/html"}
-   :body "Hello World from Clojure Ring"})
+(cc/defroutes app-routes
+  (cc/GET "/v1/articles" [] (get-articles-api))
+)
+
+(def app (handler/api app-routes))
 
 (defn boot []
-  (run-jetty #'handler {:port 8080}))
+  (run-jetty #'app {:port 8080}))
