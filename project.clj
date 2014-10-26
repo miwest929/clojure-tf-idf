@@ -11,5 +11,7 @@
                  [ring/ring-core "1.3.1"]
                  [ring/ring-jetty-adapter "1.3.1"]
                  [compojure "1.1.6"]
+                 [org.clojure/data.json "0.2.5"]
+                 [ring-cors "0.1.4"]
                  [hiccup "1.0.2"]]
   :main tf-idf.core)
