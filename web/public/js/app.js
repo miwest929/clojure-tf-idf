@@ -1,8 +1,6 @@
 angular.module('tf-idf', [
   'ui.router',
   'tf-idf.controllers'
-//  'tf-idf.services',
-//  'tf-idf.directives'
 ]).
 config(['$httpProvider', function($httpProvider) {
   $httpProvider.defaults.useXDomain = true;
@@ -14,14 +12,11 @@ config(function ($stateProvider, $urlRouterProvider) {
   $stateProvider.state('home', {
     templateUrl: 'index.html',
     controller: 'HomeCtrl'
-  })/*.
-  state('articles', {
-    templateUrl: '/books_listing',
-    controller: 'ArticlesCtrl'
   }).
   state('article', {
-    templateUrl: '/readings',
+    url: '/article/:id',
+    templateUrl: '/article/:id',
     controller: 'ArticleCtrl'
-  });*/
+  })
 });
 

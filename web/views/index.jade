@@ -1,14 +1,21 @@
 extends layout
 
 block body
-  div(ng-controller='HomeCtrl')
+  div(ng-controller='HomeCtrl').container
     h1
       | TF-IDF
-    div.navbar
-      ul.nav.list-unstyled
-        li
-          a(href="#")
-            | Article
+    div.row
+      div.span4
+        ul.unstyled
+          li
+            div.row
+              a(href="#")
+                | Overview
+          li(ng-repeat='article in articles')
+            div.row
+              a(ng-click="loadArticle(article.id)")
+                | {{article.title}}
+      div.span4(ui-view)
 
   script(src='js/lib/angular/angular.js')
   script(src='http://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.10/angular-ui-router.min.js')

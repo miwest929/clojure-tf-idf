@@ -15,6 +15,7 @@
 
 (cc/defroutes app-routes
   (cc/GET "/v1/articles" [] (json-response (get-articles-api)))
+  (cc/GET "/v1/article/:id" [id] (json-response (get-article-api id)))
 )
 
 (def app (handler/api (wrap-cors app-routes :access-control-allow-origin #"http://localhost:3000"

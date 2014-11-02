@@ -29,12 +29,8 @@ app.get('/', function(req, res) {
   res.render('index');
 });
 
-app.get('/books_listing', function(req, res) {
-  res.render('books_listing');
-});
-
-app.get('/readings', function(req, res) {
-  res.render('readings');
+app.get('/article/:id', function(req, res) {
+  res.render('article');
 });
 
 // redirect all others to the index (HTML5 history)
