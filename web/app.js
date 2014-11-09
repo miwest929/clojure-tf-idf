@@ -33,6 +33,10 @@ app.get('/article/:id', function(req, res) {
   res.render('article');
 });
 
+app.get('/overview', function(req, res) {
+  res.render('overview');
+});
+
 // redirect all others to the index (HTML5 history)
 app.get('*', function(req, res) {
   res.render('index');

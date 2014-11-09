@@ -1,3 +1,11 @@
 div(ng-controller='ArticleCtrl')
-  h1
-   | {{article.title}}
+  ul.unstyled
+    li(ng-repeat='word in article_words')
+      div.row
+        div.span4
+          span
+            | {{word.word}}
+          span.right
+            | {{word.tf_idf}}
+        div.span4
+          progress(max='{{maxTFIDF}}', value='{{word.tf_idf}}')

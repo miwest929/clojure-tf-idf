@@ -13,5 +13,6 @@
                  [compojure "1.1.6"]
                  [org.clojure/data.json "0.2.5"]
                  [ring-cors "0.1.4"]
+                 [clj-http "1.0.1"]
                  [hiccup "1.0.2"]]
   :main tf-idf.core)

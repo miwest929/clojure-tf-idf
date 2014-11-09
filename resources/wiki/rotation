@@ -1,0 +1,17 @@
+A rotation is a circular movement of an object around a center (or point) of rotation. A three-dimensional object always rotates around an imaginary line called a rotation axis. If the axis passes through the body's center of mass, the body is said to rotate upon itself, or spin. A rotation about an external point, e.g. the Earth about the Sun, is called a revolution or orbital revolution, typically when it is produced by gravity.
+
+Mathematically, a rotation is a rigid body movement which, unlike a translation, keeps a point fixed. This definition applies to rotations within both two and three dimensions (in a plane and in space, respectively.)
+
+All rigid body movements are rotations, translations, or combinations of the two.
+
+A rotation is simply a progressive radial orientation to a common point. That common point lies within the axis of that motion. The axis is 90 degrees perpendicular to the plane of the motion. If the axis of the rotation lies external of the body in question then the body is said to orbit. There is no fundamental difference between a “rotation” and an “orbit” and or "spin". The key distinction is simply where the axis of the rotation lies, either within or outside of a body in question. This distinction can be demonstrated for both “rigid” and “non rigid” bodies.
+
+If a rotation around a point or axis is followed by a second rotation around the same point/axis, a third rotation results. The reverse (inverse) of a rotation is also a rotation. Thus, the rotations around a point/axis form a group. However, a rotation around a point or axis and a rotation around a different point/axis may result in something other than a rotation, e.g. a translation.
+
+Rotations around the x, y and z axes are called principal rotations. Rotation around any axis can be performed by taking a rotation around the x axis, followed by a rotation around the y axis, and followed by a rotation around the z axis. That is to say, any spatial rotation can be decomposed into a combination of principal rotations.
+
+In flight dynamics, the principal rotations are known as yaw, pitch, and roll (known as Tait-Bryan angles). This terminology is also used in computer graphics.
+
+See also: curl (mathematics), cyclic permutation, Euler angles, rigid body, rotation around a fixed axis, rotation group SO(3), rotation matrix, axis angle, quaternion and isometry
+
+While revolution is often used as a synonym for rotation, in many fields, particularly astronomy and related fields, revolution, often referred to as orbital revolution for clarity, is used when one body moves around another while rotation is used to mean the movement around an axis. Moons revolve around their planet, planets revolve about their star (such as the Earth around the Sun); and stars slowly revolve about their galaxial center. The motion of the components of galaxies is complex, but it usually includes a rotation component.

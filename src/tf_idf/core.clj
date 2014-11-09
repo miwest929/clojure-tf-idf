@@ -9,16 +9,17 @@
 (def local-wiki-path "resources/wiki")
 
 (defn extract-important-words [top-n]
-   (let [docs (compute-frequencies (extract-articles (get-files local-wiki-path)))]
-     (doseq [d docs] (store-article (d "file")))
-     (println (map #(identity {:article (% "file") :terms (map :term (take top-n (tf-idf docs %)))}) docs))
+   (let [docs (compute-frequencies (extract-articles (get-files local-wiki-path)))
+         doc-terms (map #(identity {:article (% "file") :terms (take top-n (tf-idf docs %))}) docs)]
+     (doseq [d doc-terms] (store-article (d :article) (d :terms)))
+     (println doc-terms)
 ))
 
 (defn -main
   "I may one day do something very useful"
   [task]
   (cond
-    (= task "compute") (extract-important-words 5)
+    (= task "compute") (time (extract-important-words 20))
     (= task "server") (boot)
     :else (println "Task " task " not available.")))
 
