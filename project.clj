@@ -14,5 +14,7 @@
                  [org.clojure/data.json "0.2.5"]
                  [ring-cors "0.1.4"]
                  [clj-http "1.0.1"]
-                 [hiccup "1.0.2"]]
+                 [hiccup "1.0.2"]
+                 [org.apache.tika/tika-parsers "1.2"]
+                 [org.toomuchcode/clara-rules "0.6.2"]]
   :main tf-idf.core)

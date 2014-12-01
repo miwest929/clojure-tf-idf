@@ -15,7 +15,7 @@ block body
             div.row
               form(role="form").form-inline
                 button(type="button", ng-click="addWikiArticle()").btn.btn-default.add-article-btn
-                  | Add Wikipedia Article
+                  i.fa.fa-plus
                 input.form-control(ng-model="wikiArticleName")
           li(ng-repeat='article in articles')
             div(ng-click="select($index)", ng-class="{selectBackground: $index == selected}").row.article-item

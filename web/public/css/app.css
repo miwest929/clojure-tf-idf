@@ -2,13 +2,20 @@
   color: white;
 }
 
+span {
+  font-family: monospace;
+}
+
 li {
   margin-bottom: 5px;
 }
 
 .article-item {
   height: 25px;
-  text-align: center;
+}
+
+a {
+  margin-left: 20px;
 }
 
 .add-article-btn {
@@ -26,6 +33,17 @@ li {
 
 .right {
   float: right;
+  margin-right: 10px;
+}
+
+.left {
+  margin-left: 10px;
+}
+
+progress[value]::-webkit-progress-bar {
+  background-color: #eee;
+  border-radius: 2px 0px 10px 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
 }
 
 progress {
@@ -34,4 +52,9 @@ progress {
   width: 100%;
   height: 20px;
   background-color: #f3f3f3;
+}
+
+.word-info {
+  background-color: #BDBDBD;
+  border-radius: 10px 10px 0px 0px;
 }
